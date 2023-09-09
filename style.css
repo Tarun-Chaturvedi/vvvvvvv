@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header1{
+    min-height:  100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7) ), url(image/banner2.png);
+    background-position: center;
+    background-size: cover;
+    background-image: element(blur);
+    position: relative;
+
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 70px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box1{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box1 h1{
+    font-size: 76px;
+    color: #fff;
+}
+.text-box1 p{
+    margin: 10px 0 40px;
+    font-size:24px;
+    color:black ;
+
+}
+.tiro-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.tiro-btn:hover{
+    border: 1px solid skyblue;
+    background: skyblue;
+    transition: 2.5s;
+}
+
+@media(max-width: 700px){
+    .text-box1 h1{
+        font-size: 20px;
+    }
+}
+
+.moreoptions{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+p{
+    color: black;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+.loader, .loader span {
+    width: 10em;
+    height: 10em;
+    border: 0.25em solid white;
+    font-size: 10px;
+    border-radius: 1em;
+    position: absolute;
+    mix-blend-mode: screen;
+}
+.loader {
+    background-color: gold;
+    animation: rotating 2s linear infinite;
+    text-align: center;
+}
+@keyframes rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
+.loader span {
+    animation: de-rotating 4s linear infinite;
+}
+@keyframes de-rotating {
+    from, to {
+        transform: rotate(0deg) scale(0.5);
+    }
+    50% {
+        transform: rotate(-180deg) scale(1.2);
+    }
+}
+.loader span:nth-child(1) {
+    top: 5em;
+    left: 5em;
+    background-color: dodgerblue;
+}
+.loader span:nth-child(2) {
+    top: -5em;
+    left: 5em;
+    background-color: hotpink;  
+}
+.loader span:nth-child(3) {
+    top: 5em;
+    left: -5em;
+    background-color: mediumpurple;
+}
+.loader span:nth-child(4) {
+    top: -5em;
+    left: -5em;
+    background-color: limegreen;
+}

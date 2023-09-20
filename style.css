@@ -6,13 +6,26 @@
 .header1{
     min-height:  100vh;
     width: 100%;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7) ), url(banner0.jpg);
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7) ), url(banner1.jpg);
     background-position: center;
     background-size: cover;
     background-image: element(blur);
     position: relative;
 
 }
+.o{
+    color: aliceblue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.para{
+    background-color: transparents;
+    text-transform: capitalize;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+
+}
+    
+
 nav{
     display: flex;
     padding: 2% 6%;
@@ -31,6 +44,7 @@ nav img{
     display: inline-block;
     padding: 8px 12px;
     position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .nav-links ul li a{
     color: #fff;
@@ -40,8 +54,8 @@ nav img{
 .nav-links ul li::after{
     content: '';
     width: 0%;
-    height: 2px;
-    background: black;
+    height: 3px;
+    background: white;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -60,8 +74,9 @@ nav img{
     text-align: center;
 }
 .text-box1 h1{
-    font-size: 76px;
+    font-size: 40px;
     color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .text-box1 p{
     margin: 10px 0 40px;
@@ -74,11 +89,17 @@ nav img{
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
-    padding: 12px 34px;
+    padding: 15px 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
     background: transparent;
     position: relative;
     cursor: pointer;
+    transition: tranform .3s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: transform;
 }
 .tiro-btn:hover{
     border: 1px solid skyblue;
@@ -88,15 +109,21 @@ nav img{
 
 @media(max-width: 700px){
     .text-box1 h1{
-        font-size: 20px;
+        font-size: 40px;
     }
 }
 
 .moreoptions{
-    width: 80%;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
     margin: auto;
+    position: relative;
+    background-image:element(blur) ;
+    background-position: center;
     text-align: center;
     padding-top: 100px;
+    
 
 }
 h1{
@@ -112,53 +139,8 @@ p{
     padding: 10px;
 
 }
-.loader, .loader span {
-    width: 10em;
-    height: 10em;
-    border: 0.25em solid white;
-    font-size: 10px;
-    border-radius: 1em;
-    position: absolute;
-    mix-blend-mode: screen;
-}
-.loader {
-    background-color: gold;
-    animation: rotating 2s linear infinite;
+.contact{
+    min-height: 100vh;
     text-align: center;
 }
-@keyframes rotating {
-    to {
-        transform: rotate(1turn);
-    }
-}
-.loader span {
-    animation: de-rotating 4s linear infinite;
-}
-@keyframes de-rotating {
-    from, to {
-        transform: rotate(0deg) scale(0.5);
-    }
-    50% {
-        transform: rotate(-180deg) scale(1.2);
-    }
-}
-.loader span:nth-child(1) {
-    top: 5em;
-    left: 5em;
-    background-color: dodgerblue;
-}
-.loader span:nth-child(2) {
-    top: -5em;
-    left: 5em;
-    background-color: hotpink;  
-}
-.loader span:nth-child(3) {
-    top: 5em;
-    left: -5em;
-    background-color: mediumpurple;
-}
-.loader span:nth-child(4) {
-    top: -5em;
-    left: -5em;
-    background-color: limegreen;
-}
+
